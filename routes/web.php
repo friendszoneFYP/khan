@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('pages.index');
 });
 
+Route::get('/adminpanel', function () {
+    return view('pages.adminpanel');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
